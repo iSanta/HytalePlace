@@ -18,7 +18,7 @@
 // @connect      rplace.antonio32a.com
 // ==/UserScript==
 
-const METADATA_URL = "https://github.com/iSanta/HytalePlace/blob/main/data/metadata2.json"; //"https://rplace.antonio32a.com/metadata.json";
+const METADATA_URL = "https://raw.githubusercontent.com/iSanta/HytalePlace/main/data/metadata2.json"; //"https://rplace.antonio32a.com/metadata.json";
 
 let metadata;
 let overlayElement;
