@@ -18,7 +18,7 @@
 // @connect      rplace.antonio32a.com
 // ==/UserScript==
 
-const METADATA_URL = "https://raw.githubusercontent.com/iSanta/HytalePlace/main/data/metadata2.json"; //"https://rplace.antonio32a.com/metadata.json";
+const METADATA_URL = "https://raw.githubusercontent.com/iSanta/HytalePlace/main/data/metadata2.json";
 
 let metadata;
 let overlayElement;
@@ -130,7 +130,7 @@ const attemptPlacingPixel = async () => {
 
     const randomPixel = mismatchedPixels[Math.floor(Math.random() * mismatchedPixels.length)];
     const { x, y, targetColor } = randomPixel;
-    showMessage(`Placing pixel at (${x}, ${y}), of color: ${targetColor}, ${mismatchedPixels.length - 1} left`, 5000);
+    showMessage(`Placing pixel at (${x}, ${y}), ${mismatchedPixels.length - 1} left`, 5000);
 
     // We could also call applyPosition here, but selectPixel seems to do some extra stuff such as request
     // the pixel history which is probably better to prevent bans.
